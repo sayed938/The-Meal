@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.Fragments.CategoryMeal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.087">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_beef"
+            style="@style/card_style"
+            android:layout_marginLeft="22dp"
+
+
+            >
+            <ImageView
+                android:id="@+id/img_beef"
+                style="@style/img_category_style"
+                />
+            <TextView
+                android:id="@+id/txt_beef"
+                style="@style/txt_category_style"
+                android:text="Beef"
+                android:textColor="@color/main_background"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_breakfast"
+            style="@style/card_style"
+            android:layout_marginLeft="42dp"
+            >
+            <ImageView
+                android:id="@+id/img_breakfast"
+                style="@style/img_category_style"
+                />
+            <TextView
+                android:id="@+id/txt_breakfast"
+                style="@style/txt_category_style"
+                android:text="Breakfast"
+                android:textColor="@color/main_background"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_chicken"
+            style="@style/card_style"
+            android:layout_marginLeft="22dp"
+            >
+            <ImageView
+                android:id="@+id/img_chicken"
+               style="@style/img_category_style"
+                />
+            <TextView
+                android:id="@+id/txt_chicken"
+                style="@style/txt_category_style"
+                android:text="Chicken"
+                android:textColor="@color/main_background"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_dessert"
+            style="@style/card_style"
+            android:layout_marginLeft="42dp"
+          >
+            <ImageView
+                android:id="@+id/img_dessert"
+                style="@style/img_category_style"
+                />
+            <TextView
+                android:id="@+id/txt_dessert"
+                style="@style/txt_category_style"
+                android:text="Dessert"
+                android:textColor="@color/main_background"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.285">
+
+        <androidx.cardview.widget.CardView
+            style="@style/card_style"
+            android:id="@+id/card_goat"
+            android:layout_marginLeft="22dp"
+            >
+            <ImageView
+                android:id="@+id/img_goat"
+                style="@style/img_category_style"
+                android:background="@drawable/goat"
+                />
+            <TextView
+                android:id="@+id/txt_goat"
+                style="@style/txt_category_style"
+                android:text="Goat"
+                android:textColor="@color/main_background"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/card_style"
+            android:id="@+id/card_lamb"
+            android:layout_marginLeft="42dp"
+           >
+            <ImageView
+
+                android:id="@+id/img_lamb"
+                style="@style/img_category_style"
+
+                />
+            <TextView
+                android:id="@+id/txt_lamb"
+                style="@style/txt_category_style"
+                android:text="Lamb"
+                android:textColor="@color/main_background"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.285">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_misc"
+            style="@style/card_style"
+            android:layout_marginLeft="22dp"
+                 >
+            <ImageView
+                android:id="@+id/img_miscellaneous"
+                style="@style/img_category_style"
+                />
+
+            <TextView
+                android:id="@+id/txt_misc"
+                style="@style/txt_category_style"
+                android:layout_height="wrap_content"
+                android:text="Miscellaneous"
+
+                android:textColor="@color/main_background" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_pasta"
+            style="@style/card_style"
+            android:layout_marginLeft="42dp"
+             >
+            <ImageView
+                android:id="@+id/img_pasta"
+                style="@style/img_category_style"
+
+                />
+            <TextView
+                android:id="@+id/txt_pasta"
+                style="@style/txt_category_style"
+                android:text="Pasta"
+                android:textColor="@color/main_background"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.285">
+
+        <androidx.cardview.widget.CardView
+            style="@style/card_style"
+            android:id="@+id/card_pork"
+            android:layout_marginLeft="22dp"
+            >
+            <ImageView
+                android:id="@+id/img_pork"
+                style="@style/img_category_style"
+
+                />
+            <TextView
+                android:id="@+id/txt_pork"
+                style="@style/txt_category_style"
+                android:text="Pork"
+                android:textColor="@color/main_background"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/card_style"
+            android:id="@+id/card_seafood"
+            android:layout_marginLeft="42dp">
+
+            <ImageView
+                android:id="@+id/img_seafood"
+                style="@style/img_category_style"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_seafood"
+                style="@style/txt_category_style"
+                android:text="Seafood"
+                android:textColor="@color/main_background"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.285">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_side"
+            style="@style/card_style"
+            android:layout_marginLeft="22dp"
+            >
+            <ImageView
+                android:id="@+id/img_side"
+                style="@style/img_category_style"
+
+                />
+            <TextView
+                android:id="@+id/txt_side"
+                style="@style/txt_category_style"
+                android:text="Side"
+                android:textColor="@color/main_background"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_starter"
+            style="@style/card_style"
+            android:layout_marginLeft="42dp"
+             >
+            <ImageView
+                android:id="@+id/img_starter"
+                style="@style/img_category_style"
+
+                />
+            <TextView
+                android:id="@+id/txt_starter"
+                style="@style/txt_category_style"
+                android:text="Starter"
+                android:textColor="@color/main_background"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.285">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_vegan"
+            style="@style/card_style"
+            android:layout_marginLeft="22dp"
+            >
+            <ImageView
+                android:id="@+id/img_vegan"
+                style="@style/img_category_style"
+
+                />
+            <TextView
+                android:id="@+id/txt_vegan"
+                style="@style/txt_category_style"
+                android:text="Vegan"
+                android:textColor="@color/main_background"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_vegetar"
+            style="@style/card_style"
+            android:layout_marginLeft="42dp"
+             >
+            <ImageView
+                android:id="@+id/img_vegetarian"
+                style="@style/img_category_style"
+                />
+            <TextView
+                android:id="@+id/txt_vegetar"
+                style="@style/txt_category_style"
+                android:text="Vegetarian"
+                android:textColor="@color/main_background"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
