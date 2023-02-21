@@ -1,2 +1,2 @@
 # The-Meal
-Applications of Meals
+Application of Meals
