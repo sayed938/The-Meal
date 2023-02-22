@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<group android:checkableBehavior="single">
-    <item android:id="@+id/category_meal"
-        android:title="Category"
-        android:icon="@drawable/category"
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/category_meal"
+            android:icon="@drawable/category"
+            android:title="Category" />
+        <item
+            android:id="@+id/area_meal"
+            android:icon="@drawable/foodearth"
+            android:title="Area" />
+        <item
+            android:id="@+id/favorite"
+            android:icon="@drawable/favorite_custom"
+            android:title="Favorite"
+
+            />
+        <item
+            android:id="@+id/ingredients"
+            android:icon="@drawable/icon_ingredients"
+            android:title="Ingredients" />
 
 
-        />
-    <item android:id="@+id/area_meal"
-        android:title="Area"
-        android:icon="@drawable/foodearth"
-        />
-    <item android:id="@+id/favorite"
-        android:icon="@drawable/favorite_custom"
-        android:title="Favorite"
-        />
-
-
-</group>
+    </group>
 </menu>

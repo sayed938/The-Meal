@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="card_back">#C8C1C1</color>
     <color name="gray">#A6A3A3</color>
-    <color name="bottom_view">#419F7D</color>
+    <color name="main_color">#419F7D</color>
     <color name="main_background">#FFFFFF</color>
     <color name="text_food">#FFFFFF</color>
 </resources>
