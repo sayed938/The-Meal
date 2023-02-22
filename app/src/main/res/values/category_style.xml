@@ -11,7 +11,7 @@
     <style name="card_style">
         <item name="android:layout_width">130dp</item>
         <item name="android:layout_height">130dp</item>
-        <item name="cardBackgroundColor">@color/bottom_view</item>
+        <item name="cardBackgroundColor">@color/main_color</item>
         <item name="cardCornerRadius">20dp</item>
 
     </style>

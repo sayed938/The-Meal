@@ -14,9 +14,9 @@
         android:name="com.example.themeal.ui.Fragments.AreaMeal"
         tools:layout="@layout/fragment_area_meal"
         />
-    <fragment android:id="@+id/favorite"
-        android:label="Favorite"
-        android:name="com.example.themeal.ui.Fragments.FavoriteFood"
-        tools:layout="@layout/fragment_favorite_food"
-        />
-</navigation>
+
+    <fragment android:id="@+id/ingredients"
+        android:label="Ingredients"
+        android:name="com.example.themeal.ui.Fragments.Ingredients"
+        tools:layout="@layout/fragment_ingredients"
+        /></navigation>
