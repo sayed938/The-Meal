@@ -25,11 +25,10 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 public class DetailsCategory extends AppCompatActivity {
-    RecyclerView recyclerview;
-    //CategoryAdapter categoryAdapter;
-    TextView meal_txt, detailstxt;
-    ImageView img;
-    ViewModelDetails viewModelDetails;
+    private RecyclerView recyclerview;
+    private TextView meal_txt, detailstxt;
+    private ImageView img;
+    private ViewModelDetails viewModelDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,10 +45,9 @@ public class DetailsCategory extends AppCompatActivity {
         meal_txt = findViewById(R.id.txt_meal_name);
         img = findViewById(R.id.img_meal_details);
         int secret = getIntent().getExtras().getInt("secret");
-        if(secret==1){
+        if (secret == 1) {
             getDetailsIngred();
-        }
-        else if(secret==2){
+        } else if (secret == 2) {
             callDetails();
         }
 

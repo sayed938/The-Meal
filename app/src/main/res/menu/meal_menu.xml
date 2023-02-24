@@ -10,12 +10,6 @@
             android:icon="@drawable/foodearth"
             android:title="Area" />
         <item
-            android:id="@+id/favorite"
-            android:icon="@drawable/favorite_custom"
-            android:title="Favorite"
-
-            />
-        <item
             android:id="@+id/ingredients"
             android:icon="@drawable/icon_ingredients"
             android:title="Ingredients" />

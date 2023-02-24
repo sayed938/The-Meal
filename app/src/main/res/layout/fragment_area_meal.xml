@@ -7,17 +7,43 @@
     android:background="@color/main_background"
     tools:context=".ui.Fragments.AreaMeal">
 
-    <View
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/area_recycler"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@drawable/view_customarea"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/area_custom"
+        tools:orientation="horizontal" />
 
-    </View>
+    <TextView
+        android:id="@+id/name_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="American Food"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/area_recycler" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/area_food_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="489dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_area"
+        app:layout_constraintVertical_bias="0.0"
+        tools:orientation="horizontal" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
