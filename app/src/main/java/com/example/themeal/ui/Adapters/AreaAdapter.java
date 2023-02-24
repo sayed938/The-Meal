@@ -48,8 +48,11 @@ public class AreaAdapter extends RecyclerView.Adapter<AreaAdapter.ViewHolder> {
             @Override
             public void onClick(View v) {
                 listener.onItemClicked(area_list.get(position).strArea);
+                notifyItemRangeChanged(position, area_list.size());
+                holder.card.setBackgroundResource(R.drawable.bottom_nav_custom);
             }
         });
+
     }
 
     @Override
