@@ -9,10 +9,9 @@
 # Demo
 ### Category
 <div>
-<img src="https://user-images.githubusercontent.com/76561691/221313553-c46ee3d6-ec71-4761-ac92-3c30d52bcb25.jpg" width="230">
-  
-<img src="https://user-images.githubusercontent.com/76561691/221314728-55c796cb-cda5-40b3-a0ae-328bfbef52d1.jpg" width="230">
-<img src="https://user-images.githubusercontent.com/76561691/221315222-f019cb4a-4915-4381-a57c-2f29d6b33e62.jpg" width="230">
+  <img src="https://user-images.githubusercontent.com/76561691/221313553-c46ee3d6-ec71-4761-ac92-3c30d52bcb25.jpg" width="230"> 
+     <img src="https://user-images.githubusercontent.com/76561691/221314728-55c796cb-cda5-40b3-a0ae-328bfbef52d1.jpg" width="230">
+        <img src="https://user-images.githubusercontent.com/76561691/221315222-f019cb4a-4915-4381-a57c-2f29d6b33e62.jpg" width="230">
 </div>
 
 ### Area
