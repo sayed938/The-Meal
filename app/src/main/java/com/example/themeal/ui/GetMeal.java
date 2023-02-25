@@ -25,6 +25,7 @@ public interface GetMeal {
 
     @GET("api/json/v1/1/list.php")
     Observable<RootArea> getArea(@Query("a") String area);
+
     @GET("api/json/v1/1/filter.php")
     Observable<Root> getAreaFoodImg(@Query("a") String area);
 }

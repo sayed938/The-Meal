@@ -1,38 +1,30 @@
 package com.example.themeal.ui.Adapters;
 
-import static com.example.themeal.ui.ProjectData.sayed1;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
-import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.themeal.R;
 import com.example.themeal.pojo.area.MealArea;
-import com.example.themeal.ui.Fragments.AreaMeal;
-import com.example.themeal.ui.ProjectData;
 
-import java.security.PublicKey;
 import java.util.ArrayList;
 
 public class AreaAdapter extends RecyclerView.Adapter<AreaAdapter.ViewHolder> {
     ArrayList<MealArea> area_list = new ArrayList<>();
-    private Clicking listener;
+    private final Clicking listener;
+    int pos;
 
     public AreaAdapter(ArrayList<MealArea> area_list, Clicking clicking) {
         this.area_list = area_list;
         this.listener = clicking;
     }
-
 
     @NonNull
     @Override
@@ -47,12 +39,16 @@ public class AreaAdapter extends RecyclerView.Adapter<AreaAdapter.ViewHolder> {
         holder.card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                pos = position;
                 listener.onItemClicked(area_list.get(position).strArea);
-                notifyItemRangeChanged(position, area_list.size());
-                holder.card.setBackgroundResource(R.drawable.bottom_nav_custom);
+                notifyDataSetChanged();
             }
         });
-
+        if (pos == position) {
+            holder.card.setBackgroundResource(R.drawable.bottom_nav_custom);
+        } else {
+            holder.card.setBackgroundResource(R.drawable.area_card_custom);
+        }
     }
 
     @Override
@@ -61,17 +57,15 @@ public class AreaAdapter extends RecyclerView.Adapter<AreaAdapter.ViewHolder> {
     }
 
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView area_name, area_name_food;
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        private final TextView area_name;
         CardView card;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             area_name = itemView.findViewById(R.id.area_name);
-            area_name_food = itemView.findViewById(R.id.name_area);
             card = itemView.findViewById(R.id.card_area_name);
         }
-
     }
 
     public interface Clicking {

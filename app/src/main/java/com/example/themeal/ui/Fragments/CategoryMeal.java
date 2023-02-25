@@ -128,7 +128,7 @@ public class CategoryMeal extends Fragment {
         Intent intent = new Intent(getContext(), DetailsCategory.class);
         intent.putExtra("index", ii);
         intent.putExtra("name", name);
-        intent.putExtra("secret",2);
+        intent.putExtra("secret", 2);
         startActivity(intent);
     }
 

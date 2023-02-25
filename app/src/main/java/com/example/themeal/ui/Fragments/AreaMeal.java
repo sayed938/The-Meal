@@ -1,6 +1,8 @@
 package com.example.themeal.ui.Fragments;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -8,16 +10,19 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import com.example.themeal.R;
 import com.example.themeal.pojo.area.MealArea;
 import com.example.themeal.pojo.images.Meal;
 import com.example.themeal.ui.Adapters.AreaAdapter;
 import com.example.themeal.ui.Adapters.AreaFoodAdapter;
 import com.example.themeal.ui.ViewModelDetails;
+
 import java.util.ArrayList;
 
 public class AreaMeal extends Fragment {
@@ -46,11 +51,13 @@ public class AreaMeal extends Fragment {
         areaFoodRecycler.setLayoutManager(layoutManager2);
         return v;
     }
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         model = ViewModelProviders.of(this).get(ViewModelDetails.class);
         clicking = new AreaAdapter.Clicking() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onItemClicked(String name) {
                 name_area.setText(name + " Food");
@@ -70,6 +77,7 @@ public class AreaMeal extends Fragment {
             }
         });
     }
+
     private void getFoodImg(String area) {
         model.getAreaFoodImg(area);
         model.liveDataImages.observe(getActivity(), new Observer<ArrayList<Meal>>() {
