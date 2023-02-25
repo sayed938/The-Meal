@@ -15,7 +15,7 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
-    List<Meal>list_meal;
+    List<Meal> list_meal;
 
     public CategoryAdapter(List<Meal> list_meal) {
         this.list_meal = list_meal;
@@ -24,7 +24,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.datarecycler_custom,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.datarecycler_custom, parent, false);
         return new ViewHolder(view);
     }
 
@@ -44,7 +44,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            img_meaL=itemView.findViewById(R.id.img_recycler);
+            img_meaL = itemView.findViewById(R.id.img_recycler);
 
         }
     }
